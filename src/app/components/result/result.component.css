@@ -1,0 +1,21 @@
+.correct {
+background-color: forestgreen;
+}
+
+.wrong {
+  background-color: crimson;
+}
+
+.partially {
+  background-color: gold;
+}
+
+.app-result {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: honeydew;
+  margin: 10px;
+}

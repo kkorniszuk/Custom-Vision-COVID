@@ -1,0 +1,3 @@
+<div [ngClass]="{'correct': tagName === tagEnum.CORRECT, 'partially': tagName === tagEnum.PARTIALLY, 'wrong': tagName === tagEnum.WRONG}" class="app-result">
+  {{probability}}: {{getTagString(tagName)}}
+</div>

@@ -1,0 +1,28 @@
+<div class="flex">
+  <div class="container">
+    <div class="d-flex flex-column align-items-center">
+      <div class="p-1">
+        <video #video class="vid" autoplay></video>
+      </div>
+      <div class="pb-2">
+        <button class="btn btn-primary" (click)="checkMaskManually()">Manually test image</button>
+      </div>
+      <div class="p-1">
+        <canvas #canvas class="vid"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="container flex">
+    <div
+      *ngFor="let result of results"
+      class="container-results"
+    >
+      <app-result
+        [tagName]="result.tagName"
+        [probability]="result.probability"
+        class="app-result"
+      >
+      </app-result>
+    </div>
+  </div>
+</div>
